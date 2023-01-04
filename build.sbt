@@ -1,5 +1,15 @@
-name := "base_accelerators"
 
-version := "0.1"
+import Dependencies.{compiledDependencies,testDependencies}
+import Dependencies.Libraries._
+import Dependencies.TestDependencies._
 
-scalaVersion := "2.13.10"
+name := "style_test_project"
+version := "1.0"
+
+scalaVersion := "2.13.6"
+
+libraryDependencies ++= compiledDependencies(
+  pureconfig
+) ++ testDependencies(
+
+)
